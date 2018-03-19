@@ -1,0 +1,21 @@
+{
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "all",
+  "editor.insertSpaces": true,
+  "AllAutocomplete.showCurrentDocument": false,
+  "AllAutocomplete.cycleOpenDocumentsOnLaunch": true,
+  "editor.mouseWheelScrollSensitivity": 0.5,
+  "ruby.codeCompletion": "solargraph",
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "match": "**/*.rb",
+        "cmd": "ruby ${workspaceRoot}/tests/test_all.rb"
+      }
+    ]
+  },
+  "triggerTaskOnSave.tasks": {
+    "Test": ["**/*.rb"]
+  },
+  "triggerTaskOnSave.restart": false
+}

@@ -1,0 +1,16 @@
+{
+  "calendar-entries":[
+    {
+      "name": "Christmas",
+      "date": "12-25"
+    },
+    {
+      "name": "Easter",
+      "occurrence": "3/1/\"blue\""
+    },
+    {
+      "name": "Remembrance Day",
+      "date": "11-11"
+    }
+  ]
+}

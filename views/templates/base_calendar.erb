@@ -1,0 +1,40 @@
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header"><%= @year %></div>
+  <div class="container">
+    <% @months.each do |month| %>
+    <div class="month">
+      <div class="month-name"><%= month.name %></div>
+      <div class="week-header">
+        <% weekday_headers.each do |header| %>
+          <span><%= header %></span>
+        <% end %>
+      </div>
+        <% month.weeks.each do |week| %>
+          <div class="week">
+            <% week.each do |day| %>
+              <% if day %>
+                <span class="<%= get_style(day)%>"><%= day.day %></span>
+              <% else %>
+                <span></span>
+              <% end %>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+  <div class="important-dates">
+  <div class="header">Important Dates</div>
+  <ul>
+    <% calendar_entries.dates.each do |entry| %>
+      <li><%= entry.to_s %></li>
+    <%end%>
+  </ul>
+</div>
+  <%# render partial: '_important_dates.erb' %>
+</body>
+</html>

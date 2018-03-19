@@ -1,0 +1,8 @@
+<div class="important-dates">
+  <div class="header">Important Dates</div>
+  <ul>
+    <% calendar_entries.each |entry| %>
+      <li><%= entry.to_s %></li>
+    <%end%>
+  </ul>
+</div>

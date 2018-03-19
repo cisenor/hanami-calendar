@@ -1,0 +1,9 @@
+---
+include:
+- "**/*.rb"
+exclude:
+- spec/**/*
+- tests/**/*
+domains: []
+required: []
+plugins: []
